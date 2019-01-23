@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enactus VIT Chennai</title>
+
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="images/enactus.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />	
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+
+	<link href="css/prettyPhoto.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />	
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    #overlay1 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    cursor: pointer;
+
+}
+#overlay2 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    cursor: pointer;
+    
+}
+#overlay3 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    cursor: pointer;
+    
+}
+#overlay4 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    cursor: pointer;
+    
+}
+
+.zoom {
+    
+    transition: transform .6s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family:"arial-header";
+  line-height: 25px;
+  border-radius: 4px;
+  margin-left:30px;
+  margin-right:30px;
+}
+
+
+.header a:hover {
+  color: red;
+}
+
+.header a.active {
+  color: red;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .mainlogo{
+  height:84px;
+  }
+}
+
+.mainlogo{
+width:150px;
+height:84px;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;	
+  }
+  .header a:hover {
+  background-color:lightgrey;
+}
+  .header-right {
+    float: none;
+  }
+  
+}
+</style>
+</head>
+<body
+
+<a onclick="myFunction()">Try it</a>
+<div id="myDIV1">
+<div class="zoom">
+							<div class="box" style="border-radius: 60px;width:33%;margin-left:10%;">
+								<div >
+									<img src="Y.jpg" alt="" style="height:300px; width:100%;  border-radius: 60px; margin-top: 20px; border:6px double #545565;"/>
+								</div>
+								<div class="content">
+									<div class="zoom">
+									<header class="align-center">
+										<p style="font-size:20px;color:black;"> PROJECT UJJWAL</p>
+									</header>
+								</div>
+									<p  style="text-align: justify;"><font color="grey"> This project attempts to address and solve the issue of pollution due to plastic waste by replacing conventional plastic carry bags with home-made cloth bags. These cloth bags will mainly be stitched by a group of slum women in T-Nagar</font></p>
+									<div class="zoom">
+									<footer class="align-center">
+										<a  class="button alt" style="border-radius: 20px";><div onclick="on1()"> Learn More</div></a>
+									</footer>
+								</div>
+								</div>
+							</div>
+						</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV1");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
+
