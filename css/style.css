@@ -62,7 +62,7 @@ a:hover {
 
 .text-center p {
 	margin-bottom:50px;
-	background-image:img1.jpg;
+	background-image: "img1.jpg";
 }
 
 .btn-default {
