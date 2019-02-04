@@ -1,0 +1,382 @@
+@import url(https://fonts.googleapis.com/css?family=Halant:400,500,300,600,700|Josefin+Sans:400,100italic,100,300,300italic,400italic,600,600italic,700|Playfair+Display:400,400italic,700,700italic,900,900italic)
+
+$font-title: 'Josefin Sans', sans-serif
+$font-sans: 'Josefin Sans', sans-serif
+$font-serif: 'Playfair Display', serif
+$font-paragraph: 'Halant', serif
+$font-drop-cap: 'Playfair Display', serif
+
+$color-very-dark: #000000
+$color-dark: #808080
+$color-medium: #cccccc
+$color-light: #f5f5f5
+$color-very-light: #ffffff
+
+$tablet-width: 768px
+$desktop-width: 1024px
+
+@mixin tablet
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px})
+    @content
+
+@mixin desktop
+  @media (min-width: #{$desktop-width})
+    @content
+
+figure
+  margin: 0
+  
+body
+  font-size: 26px
+  
+  @include tablet
+    font-size: 18px
+    
+  @include desktop
+    font-size: 10px
+
+.responsive
+  margin: 0 auto
+  width: 95%
+  
+  @include tablet
+    width: 90%
+    
+  @include desktop
+    width: 1024px
+    
+main
+    
+
+#content
+
+#article-cover
+  width: 100%
+  
+  .hero-photo
+    height: 100vh
+    overflow: hidden
+    background: url(https://40.media.tumblr.com/0ffc52f37ac317fcd870e7a2c6b06fbf/tumblr_nbpb0sdTpR1rlusy7o1_1280.jpg) no-repeat center center fixed
+    background-size: cover
+      
+.article-details-wrapper
+  background: rgba(0,0,0,0.5)
+    
+#article-details
+  width: 100%
+  position: fixed
+  top: 0
+  margin: 3em 0 3em 0
+  text-align: center
+  // overflow: hidden
+  
+  &.stuck
+    position: relative
+
+  .article-category
+    a
+      font-family: $font-sans
+      font-weight: 200
+      font-style: normal
+      font-size: 2.5em
+      text-transform: lowercase
+      text-decoration: none
+      color: $color-medium
+      display: inline-block
+      margin: 1.45em 0 1.5em
+
+  h1.article-title
+    font-family: $font-title
+    font-weight: 100
+    font-style: italic
+    font-size: 6.2em
+    line-height: 0.9em
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    color: $color-very-light
+    margin: 0px
+    margin-bottom: 0.4em
+
+    & > span:last-child
+      font-family: $font-title
+      font-weight: 700
+      font-style: normal
+      font-size: 3em
+      line-height: 1em
+      text-transform: uppercase
+      display: block
+      letter-spacing: 0.05em
+      word-spacing: 0.05em
+
+  .article-abstract
+    font-family: $font-sans
+    font-weight: 300
+    font-style: normal
+    font-size: 2.8em
+    line-height: 1.45em
+    color: $color-light
+    display: block
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    margin-bottom: 1em
+    padding: 0 10%
+
+  .article-byline
+    font-family: $font-sans
+    font-weight: 300
+    font-style: normal
+    font-size: 2.0em
+    color: $color-medium
+    display: block
+    padding-bottom: 0.8em
+
+    & strong
+      font-style: italic
+      font-weight: 400
+      
+#read-more
+  padding: 2em 0
+  height: 100%
+  text-align: center
+
+  &.stuck
+    display: none
+
+  a
+    font-family: $font-sans
+    font-weight: 300
+    font-style: normal
+    font-size: 2em
+    text-transform: uppercase
+    text-decoration: none
+    display: inline-block
+
+  a, i
+    display: block
+    color: $color-medium
+
+#article-body
+  text-align: justify
+  font-family: $font-paragraph
+  font-weight: 400
+  font-size: 1.6em
+  line-height: 1.571em
+  
+  .article-copy
+
+    p
+      margin: 0 0 1.571em 0
+
+    &.dropcap:first-letter
+      font-family: $font-drop-cap
+      font-weight: 500
+      font-style: normal
+      font-size: 15.3em
+      color: $color-very-dark
+      float: left
+      line-height: 0.7em
+      margin: 0 0.09em 0.1em 0
+      
+.article-sidebar
+  float: right
+  height: 100%
+  width: 50%
+  padding: 2em
+  margin: 0 0 1em 2.6em
+  text-align: left
+  background: $color-light
+  
+  @include desktop
+    width: 30%
+    
+  h3
+    margin: 0 0.8em
+    font-family: $font-serif
+    font-weight: 500
+    font-style: normal
+    font-size: 2.3em
+    line-height: 1em
+    text-transform: uppercase
+    color: $color-very-dark
+    text-align: center
+    padding: 0.4em 0 0.3em
+    border-top: 2px solid $color-very-dark
+    border-bottom: 2px solid $color-very-dark
+    
+  h4
+    font-family: $font-sans
+    font-weight: 400
+    font-style: normal
+    font-size: 1.09em
+    line-height: 1.2em
+    text-transform: uppercase
+    color: $color-dark
+    margin: 1.2em 1.65em
+    display: block
+    text-align: center
+    
+  ol
+    padding: 0px
+    margin: 1.2em
+    
+  li
+    list-style-type: none
+    counter-increment: step-counter
+    overflow: hidden
+    margin: 0px 0px 2.5em
+    
+  ol li:before
+    content: counter(step-counter)
+    font-family: $font-serif
+    font-size: 4.47em
+    line-height: 1em
+    color: $color-very-dark
+    margin: -0.06em 6px 0.05em 0px
+    display: inline-block
+    
+  .sidebar-list-item
+    width: 80%
+    float: right
+    
+    &:after
+      content: " "
+      width: 10em
+      display: block
+      position: absolute
+      border-bottom: 1px solid $color-medium
+    
+    h5
+      margin: 0 0 0.2em
+      font-family: $font-serif
+      font-weight: 500
+      font-style: normal
+      font-size: 1.27em
+      text-transform: uppercase
+      
+    p  
+      font-family: $font-sans
+      font-style: normal
+      margin-bottom: 0.4em
+      
+.pulledquote
+  display: block
+  font-family: $font-sans
+  color: $color-dark
+  font-weight: 500
+  font-style: normal
+  text-transform: uppercase
+  text-align: center
+  margin: 0 0 2em 0
+  
+  &:before
+    width: 100%
+    content: "\201C"
+    font-family: $font-serif
+    font-size: 8em
+    position: relative
+    top: 0.48em
+    left: 20%
+    color: $color-light
+    z-index: -1
+  
+#article-images
+  img
+    width: 100%
+    height: auto
+    overflow: hidden
+
+  figcaption
+    font-family: $font-serif
+    font-weight: 400
+    font-style: normal
+    font-size: 1.2em
+    line-height: 1.4em
+    text-align: center
+    margin: 0px auto
+    border-bottom: 1px solid #000
+    padding: 1.5em 0px 2.5em
+    
+  #article-images ul
+    list-style: none
+    position: absolute
+    width: 100%
+    text-align: center
+    bottom: 0
+    
+  .slick-dots
+    position: absolute
+    bottom: 7em
+    display: block
+    width: 100%
+    padding: 0
+    list-style: none
+    text-align: center
+    
+  .slick-dots li
+    position: relative
+    display: inline-block
+    width: 20px
+    margin: 0 5px
+    padding: 0
+    cursor: pointer
+ 
+  .slick-dots li button
+    font-size: 0
+    line-height: 0
+    display: block
+    width: 20px
+    height: 20px
+    padding: 5px
+    cursor: pointer
+    color: transparent
+    border: 0
+    outline: none
+    background: transparent
+
+    &:before
+      font-family: FontAwesome
+      font-size: 6px
+      line-height: 20px
+      position: absolute
+      top: 0
+      left: 0
+      width: 20px
+      height: 20px
+      content: "\f111"
+      text-align: center
+      opacity: .25
+      color: black
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+  
+  .slick-prev, .slick-next
+    font-family: FontAwesome
+    position: absolute
+    top: 30%
+    z-index: 2
+    color: transparent
+    background: transparent
+    border: none
+    outline: none
+
+  .slick-prev:before, .slick-next:before
+    font-size: 200px
+    line-height: 1
+    opacity: .25
+    color: white
+    -webkit-font-smoothing: antialiased
+
+  .slick-prev
+    left: -5px
+
+    &:before
+      content: "\f104"
+
+  .slick-next
+    right: -25px
+
+    &:before
+      content: "\f105"
+  li.slick-active button:before
+    opacity: .75
+    color: black

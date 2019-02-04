@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./articlStyle.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/jquery.bxslider.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />	 -->
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <!-- <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" /> -->
+    <!-- <link href="css/prettyPhoto.css" rel="stylesheet" /> -->
+    <!-- <link href="css/style.css" rel="stylesheet" />	 -->
+    <!-- <link rel="stylesheet" href="assets/css/css1.css" />s -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+</head>
+
+<script type="text/javascript">
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+
+        if (currentScrollPos >= 38) {
+            document.getElementById("kk").style.top = "-8px";
+            document.getElementById("kk").style.opacity = "0.7";
+        } else {
+            document.getElementById("kk").style.top = "35px";
+            document.getElementById("kk").style.opacity = "1";
+        }
+
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+<script>
+    $(function() {  $("#popModal").modal('show'); });
+</script>
+<script>
+    var vid = document.getElementById("vid");
+   vid.addEventListener("timeupdate", function(){
+    if(vid.currentTime >= 18) {
+        vid.pause();
+        }
+    });
+</script>
+<style>
+
+
+
+    /* Create four equal columns that floats next to each other */
+.column {
+float: center;
+width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+.column {
+   
+    width: 50%;
+}
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+    margin-left:45px;
+    width: 70%;
+}
+}
+
+@media screen and (max-width: 500px) {
+.spon {
+    margin-left:15px;
+}
+}
+
+
+* {box-sizing: border-box;}
+
+body { 
+margin: 0;
+font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+
+.header {
+overflow: hidden;
+
+}
+
+.header a {
+float: left;
+color: black;
+text-align: center;
+text-decoration: none;
+font-size: 18px;
+font-family: 'Roboto',"arial-header";
+font-weight: 800;
+line-height: 25px;
+border-radius: 4px;
+margin-left:30px;
+margin-right:30px;
+}
+
+
+.header a:hover {
+color: red;
+}
+
+.header a.active {
+color: red;
+}
+
+.header-right {
+float: right;
+}
+
+.mainlogo{
+width:150px;
+height:84px;
+}
+
+@media screen and (max-width: 500px) {
+.header a {
+float: none;
+display: block;
+text-align: left;	
+}
+.header a:hover {
+background-color:lightgrey;
+}
+.header-right {
+float: none;
+}
+
+}
+
+
+.navigation  {
+	background-color:#fff;
+	padding:0;
+}
+
+.navbar-brand h1 {
+	margin-top:-1px;
+	padding-top:5px;
+	float: left;	
+	font-size: 30px;	
+	color:#333;		
+}
+.navbar-brand img {
+	margin-top:-15px;
+	padding-top:0px;
+}
+.navbar-brand h1 span {
+	color: #ED502E;
+}
+
+.menu {
+	font-size:16px;
+	float:right;
+	text-transform:uppercase;
+	font-weight:600;	
+}
+
+.menu ul.nav-tabs li {
+	color:#000;	
+}
+
+.nav-tabs {
+	border-bottom: 0;
+}
+.nav-tabs > li {
+	float: left;
+	margin-bottom: 0;
+}
+.nav-tabs > li > a {	
+	border-radius:0;
+	color:#333;
+	padding:30px;
+}
+
+.nav-tabs > li > a:hover {	
+	color: #ED502E;
+	border-color: #fff #fff #fff;
+	border-radius:0;
+	background-color:#fff; 
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+.nav-tabs > li > a.active {
+	color: #ED502E;
+	border-radius:0;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+.slider {
+	margin-top:-20px;
+	margin-right:0px;
+	margin-left:-40px;
+}
+
+
+.box {
+	margin-top:70px;
+	text-align:center;	
+	background:#f9f9f9;
+}
+.box h4 {
+	text-transform:uppercase;
+	margin-top:50px;
+	margin-bottom:80px;
+	padding:50px;
+}
+.box i {
+	color:#fff;
+	border-radius:50%;
+	padding:20px;
+	background:#ED502E;
+}
+.box i:hover {
+	color:#ED502E;
+	background:#fff;
+}
+
+
+
+/* footer */
+.footer {
+	background:#292929;
+	padding:50px;	
+}
+
+.footer p {
+	margin-top:-8px;
+	font-size:13px;
+	line-height:30px;
+}
+
+.footer h2 {
+	color:#fff;
+	margin-bottom:50px;
+	font-size:20px;
+}
+
+ul.social-network {
+	margin-top:30px;
+	transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+ul.social-network li {
+	display:inline;
+	font-size: 14px;
+	margin-right:10px;
+	
+}
+ul.social-network li a {	
+	color:white;
+	padding:5px 10px;
+	background:#000;
+	border-radius:50%;
+}
+
+.social-network li:hover .fa-twitter {	
+	color: #00abf0;	
+}
+
+.social-network li:hover .fa-facebook {
+  color: #39579a;
+}
+.social-network li:hover .fa-google-plus {
+  color: #eb8984;
+}
+.social-network li:hover .fa-pinterest {
+  color: #c9171e;
+  
+}
+.social-network li:hover .fa-linkedin {
+  color: #0077b5;
+  
+}
+.footer h3 {
+	color:#fff;
+	margin-bottom:50px;
+	font-size:16px;
+}
+.footer ul {
+	text-decoration:none;
+	list-style:none;
+	margin-left:-40px;
+	font-size:13px;
+}
+.footer ul li:hover {
+	color:#ED502E;
+	cursor:pointer;	
+}
+
+.sub-footer a {
+	color: #fff;
+	font-size:13px;	
+}
+
+.sub-footer a:hover {
+  color: #ED502E;
+}
+
+.sub-footer {
+	background:#090909;
+	padding:30px;
+}
+.sub-footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sub-footer ul > li {
+  display: inline-block;
+  color:white;
+  font-size:13px;
+  margin-right:30px;
+}
+
+a.scrollup{
+    color:#fff;
+	height:40px;
+	width:40px;
+	font-size:12px;
+	line-height:30px;
+	text-align:center;
+	text-decoration:none;
+	position:fixed;
+	bottom:20px;
+	right:40px;	
+	opacity:0,5;
+	border-radius:50%;
+	z-index:999;
+}
+a.scrollup:hover{
+	opacity:1;
+	background-color:#ED502E;
+	color:#fff;;	
+}
+
+</style>
+
+<body>
+    <header>
+        <div style="background-color: #ffc400;width: 100%;height: 38px;position: relative;">
+            <div style="margin-left:10px; padding-top: 7px;">
+                <i class="icon fa fa-phone"></i><a href="#" style="text-decoration: none;">+91 7550238165</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="icon fa fa-envelope"></i><a href="mailto:enactus.vitc@gmail.com" style="text-decoration: none;">enactus.vitc@gmail.com</a>
+
+                <a href="https://www.facebook.com/enactusvitc/?ref=br_rs" data-placement="top" title="Facebook" class="collapse"><i
+                        class="fa fa-facebook fa-1x"></i></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://twitter.com/search?q=Enactus%20Vit%20Chennai&src=typd" data-placement="top" title="Twitter"
+                    class="collapse"><i class="fa fa-twitter fa-1x"></i>
+                </a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/company/enactusvitc/" data-placement="top" title="Linkedin" class="collapse"><i
+                        class="fa fa-linkedin fa-1x"></i></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.instagram.com/enactusvitc/?hl=en" data-placement="top" title="Instagram" class="collapse"><i
+                        class="fa fa-instagram fa-1x"></i></a>
+
+
+
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" id="kk" style="position: fixed;width:100%;">
+            <div class="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse"
+                            style="margin-top:25px;width:45px;">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div>
+                            <a href="index.html"><img src="logo2.png" alt="Girl in a jacket" class="mainlogo"></a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-collapse collapse">
+                        <div class="menu">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation"><a href="http://enactusvitchennai.org/" class="active" style="text-decoration: none;">HOME</a></li>
+                                <li role="presentation"><a href="services.html" style="text-decoration: none;">ABOUT US</a></li>
+                                <li role="presentation"><a href="projects.html" style="text-decoration: none;">PROJECTS</a></li>
+                                <li role="presentation"><a href="Event_Proto.html" style="text-decoration: none;">EVENTS</a></li>
+                                <li role="presentation"><a href="gallery.html" style="text-decoration: none;">GALLERY</a></li>
+                                <li role="presentation"><a href="#section-2" style="text-decoration: none;">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+
+        <section id="content">
+            <section id="article-cover">
+                <div class="hero-photo"></div>
+                <div id="article-details">
+                    <div class="article-details-wrapper responsive">
+                        <div class="article-category"><a href="#">Enactus VITC</a></div>
+                        <h1 class="article-title">Project Ujjwal</h1>
+                        <div class="article-abstract">Project Ujjwal aims at and relies on the basic sewing skills,
+                            thereby, making beautiful and striking products from rags and waste cloth. </div>
+                        <!-- <div class="article-byline">Text: <strong>John Doe</strong></div> -->
+                        <div id="read-more" class="responsive">
+                            <a href="#article-body">March 2018</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="article-body" class="responsive">
+                <div class="article-copy dropcap">
+                    <p>Project Ujjwal aims at and relies on the basic sewing skills, thereby, making beautiful and
+                        striking products from rags and waste cloth. It adheres to the growing demand of switching from
+                        plastic to decomposable materials which would not harm the environment. It also aims at reusing
+                        old newspapers and making paper bags out of them which will be used in supermarkets. The two
+                        goals of this project are to address the damage to the environment caused by the increasing use
+                        of plastic bags and to provide employment to the underprivileged such as ladies from a slum,
+                        Burmese refugees and transgender community, whose talents if shaped and guided well could give
+                        them a chance to stand on their feet and earn for themselves. We had to make sure that the
+                        products that we made would appeal to our target audience and therefore, it was essential that
+                        every piece was produced through our audiences’ lens.
+                    </p>
+                    <p>
+                        The designs and cost analysis were done, keeping our audience in mind to ensure the success of
+                        our project. Our team came up with a system to collect the textile waste from industries, and
+                        old clothes from the local societies which could be used as raw materials to produce handmade
+                        recycled products, like bags, pouches etc. Our basic idea was to empower the ladies from the
+                        Chennai slums, the transgender community and the Rohingya refugees and distribute the profit
+                        amongst them.
+
+                    </p>
+                    <aside class="article-sidebar">
+                        <h3>Achievements</h3>
+                        <h4>over the years</h4>
+                        <ol>
+                            <li>
+                                <div class="sidebar-list-item">
+                                    <h5>Ensimmäisen pointin otsikko</h5>
+                                    <p>A continuous supply of paper bags made by the Burmese refugees to V-mart in VIT Chennai college.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sidebar-list-item">
+                                    <h5>Otsikko</h5>
+                                    <p>Cloth bags in required sizes but working on potential markets.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sidebar-list-item">
+                                    <h5>Otsikko</h5>
+                                    <p>Miscellanious products like book marks, tea-coasters, laptop covers etc in an Eco-Mithra event.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </aside>
+                    <p>Project Pragati mainly focuses on providing the under privileged sector of the society with the
+                        skill-sets required for a business model, so that there exists minimum competition in the
+                        beginning of the business thus allowing it to grow at a faster rate. The basic idea would
+                        require the utilization of waste water. The target audience would be taught the methodology
+                        behind growing the algae using a small setup and waste water of their household/ locality i.e.
+                        the efficient usage of the available resources and waste water to come up with something
+                        productive. They would be taught the basic means of communication to make it a self-sustainable
+                        process. </p>
+                    <p>
+                        The synthetic fertilizers would get replaced by cheap and organic ones thus making the soil
+                        nutrient-rich and porous, improving the quality of the soil. . The fertilizers present in the
+                        market give a certain amount of yield that can be increased by mixing the algae produced by the
+                        setups. Our farmers are the backbone to our nation so aiding them to meet the demands of the
+                        ever growing population without compromising on quality or safety is of utmost importance.
+                        <span class="pullquote">Ut cursus augue in arcu fermentum, ut facilisis est
+                            fermentum.</span> Vestibulum volutpat, ante sagittis feugiat elementum, metus massa
+                        vestibulum nulla, at lacinia quam tortor nec augue.
+                    </p>
+                    <!-- <p>
+                        Aenean id consectetur magna, in volutpat odio. Nunc vulputate, nisi vitae facilisis ultrices,
+                        ligula urna laoreet elit, eu fermentum diam neque et purus. Nullam vel nibh turpis. Nulla
+                        facilisi. Proin a pretium arcu. Nullam gravida non lectus non venenatis. Aenean quis luctus
+                        elit, ut tempus leo.
+                    </p>
+                    <p>
+                        Morbi semper orci velit, ut fringilla mi ultrices quis. Sed at venenatis risus. Quisque ligula
+                        nunc, auctor tempor dolor a, pellentesque ornare risus. Suspendisse iaculis condimentum ipsum a
+                        scelerisque. Nam ut laoreet nisl. Maecenas ornare eros vel mauris fringilla convallis. Integer
+                        scelerisque erat arcu, quis pellentesque augue venenatis quis. Etiam non facilisis libero.
+                        Fusce a tincidunt massa. Pellentesque vitae nibh dictum, congue purus vel, feugiat nisi.
+                    </p>
+                    <p>
+                        Donec congue finibus tellus et consequat. Nam sed nisl accumsan, congue tortor sed, dapibus mi.
+                        Cras at eros volutpat, ultricies mi sed, maximus leo. Aliquam erat volutpat. Phasellus faucibus
+                        ex eget mi cursus, ut placerat mauris luctus. Vestibulum et tempor nisi, id ultricies dolor.
+                        Praesent mollis tristique nisi nec vestibulum. In eu imperdiet felis. Nunc ultricies ultricies
+                        odio id vehicula. Integer ut placerat orci, quis finibus enim. Curabitur eleifend, nulla vitae
+                        fringilla blandit, felis tortor molestie erat, sit amet laoreet dolor purus sit amet ipsum.
+                        Nulla a fringilla lacus. Donec faucibus nisi ipsum, at efficitur leo accumsan at. Nam pharetra,
+                        odio id euismod venenatis, felis felis tristique neque, ut sodales purus est eu arcu.
+                    </p>
+                    <p>
+                        Donec orci urna, volutpat auctor sagittis sed, tincidunt eget urna. Vestibulum efficitur sem
+                        magna, quis consectetur dui mattis eget. Aliquam arcu nulla, rhoncus rutrum suscipit sed,
+                        tempor in lorem. Pellentesque auctor magna ac malesuada aliquet. Sed auctor lorem maximus
+                        facilisis vulputate. Nullam eu tempor nisl. Maecenas porta gravida dictum. Nullam efficitur
+                        augue in libero elementum, eget gravida velit fermentum.
+                    </p>
+                    <p>
+                        Morbi posuere at dui in tempor. Aliquam pulvinar auctor lobortis. Nullam posuere suscipit
+                        consectetur. Donec sed finibus nulla, sed finibus dui. Phasellus gravida est nulla, quis
+                        rhoncus arcu gravida quis. Mauris ultrices congue velit, vel tincidunt nibh sollicitudin in.
+                        Duis pulvinar eget dolor sed dapibus. Curabitur in luctus augue.
+                    </p>
+                    <p>
+                        Nulla facilisi. Nunc ac eros augue. Fusce finibus sapien nisi, id pretium erat venenatis sed.
+                        Donec elementum egestas volutpat. Donec ullamcorper vitae nulla eu posuere. Aenean euismod
+                        justo et placerat feugiat. Praesent sit amet ante purus. <span class="pullquote">Nunc imperdiet
+                            mollis interdum.</span> Fusce gravida, libero lacinia faucibus pellentesque, nibh leo
+                        varius velit, quis tristique neque justo nec justo. Etiam sagittis ex ac mi dapibus dapibus.
+                        Donec et arcu blandit, aliquet sem eu, commodo mi.
+                    </p> -->
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer" id="section-2">
+            <div class="container">
+                <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">
+                    <h2 style="color: #ffc400">ENACTUS</h2>
+                    <p style="color: white;">We are an international non-profit organisation that believes investing in
+                        students who take ENTrepreneurial ACTion for uplifting a part of a society, hence, creating a
+                        better world for US all.</p>
+
+                    <ul class="social-network">
+                        <li><a href="https://www.facebook.com/enactusvitc/?ref=br_rs" data-placement="top" title="Facebook"
+                                target="_blank"><i class="fa fa-facebook fa-1x"></i></a></li>
+                        <li><a href="https://twitter.com/search?q=Enactus%20Vit%20Chennai&src=typd" data-placement="top"
+                                title="Twitter" target="_blank"><i class="fa fa-twitter fa-1x"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/enactusvitc/" data-placement="top" title="Linkedin"
+                                target="_blank"><i class="fa fa-linkedin fa-1x"></i></a></li>
+                        <li><a href="https://www.instagram.com/enactusvitc/?hl=en" data-placement="top" title="Instagram"
+                                target="_blank"><i class="fa fa-instagram fa-1x"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.4s">
+                    <style type="text/css">
+                        li {
+                            color: #ffffff;
+                        }
+                    </style>
+                    <h3 style="color: #ffc400">RECENT POSTS</h3>
+                    <ul>
+                        <li>Recruitments Coming Soon!</li>
+                        <hr>
+                        <li>TechnoVIT Event: EnactoPreneur</li>
+                        <hr>
+                        <li>TechnoVIT Stall: The Yard Sale by Enactus</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                    <h3 style="color: #ffc400">CONTACT US</h3>
+                    <ul>
+                        <li><i class="fa fa-home fa-2x"></i> VIT University, Vandalur Kelambakkam Road, Chennai 600048</li>
+                        <hr>
+                        <li><i class="fa fa-phone fa-2x"></i>&nbsp;&nbsp;Faculty (Prof.Pratibha Nalini): 9940023757 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team:
+                            7550238165</li>
+                        <hr>
+                        <li><i class="fa fa-envelope fa-2x"></i> enactus.vitc@gmail.com</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        2018 <a href="index.html" style="text-decoration: none;">Enactus</a> VIT Chennai. All Rights
+                        Reserved.
+                        &nbsp;&copy;
+                    </div>
+
+                    <!-- 
+                        All links in the footer should remain intact. 
+                        Licenseing information is available at: http://bootstraptaste.com/license/
+                        You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Multi
+                    -->
+                </div>
+                <div class="pull-right">
+                    <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js"></script>
+    <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+
+    <script src="./article.js"></script>
+</body>
+
+</html>
