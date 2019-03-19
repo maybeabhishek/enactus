@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Halant:400,500,300,600,700|Josefin+Sans:400,100italic,100,300,300italic,400italic,600,600italic,700|Playfair+Display:400,400italic,700,700italic,900,900italic);
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
 figure {
   margin: 0;
 }
@@ -43,7 +45,7 @@ body {
 #article-cover .hero-photo {
   height: 100vh;
   overflow: hidden;
-  background: url(https://40.media.tumblr.com/0ffc52f37ac317fcd870e7a2c6b06fbf/tumblr_nbpb0sdTpR1rlusy7o1_1280.jpg) no-repeat center center fixed;
+  /* background: url('./images/portfolio/trad/img\ \(1\).jpg') no-repeat center center fixed; */
   background-size: cover;
 }
 
@@ -64,7 +66,7 @@ body {
 }
 
 #article-details .article-category a {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Anton", sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 2.5em;
@@ -76,7 +78,7 @@ body {
 }
 
 #article-details h1.article-title {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Anton", sans-serif;
   font-weight: 100;
   font-style: italic;
   font-size: 6.2em;
@@ -88,17 +90,7 @@ body {
   margin-bottom: 0.4em;
 }
 
-#article-details h1.article-title > span:last-child {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 3em;
-  line-height: 1em;
-  text-transform: uppercase;
-  display: block;
-  letter-spacing: 0.05em;
-  word-spacing: 0.05em;
-}
+
 
 #article-details .article-abstract {
   font-family: "Josefin Sans", sans-serif;
@@ -115,7 +107,7 @@ body {
 }
 
 #article-details .article-byline {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 2.0em;
@@ -140,7 +132,7 @@ body {
 }
 
 #read-more a {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 2em;
@@ -167,7 +159,7 @@ body {
 }
 
 #article-body .article-copy.dropcap:first-letter {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 15.3em;
@@ -195,7 +187,7 @@ body {
 
 .article-sidebar h3 {
   margin: 0 0.8em;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 2.3em;
@@ -209,7 +201,7 @@ body {
 }
 
 .article-sidebar h4 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.09em;
@@ -235,7 +227,7 @@ body {
 
 .article-sidebar ol li:before {
   content: counter(step-counter);
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   font-size: 4.47em;
   line-height: 1em;
   color: #000000;
@@ -258,7 +250,7 @@ body {
 
 .article-sidebar .sidebar-list-item h5 {
   margin: 0 0 0.2em;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 1.27em;
@@ -266,14 +258,14 @@ body {
 }
 
 .article-sidebar .sidebar-list-item p {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   margin-bottom: 0.4em;
 }
 
 .pulledquote {
   display: block;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #808080;
   font-weight: 500;
   font-style: normal;
@@ -285,7 +277,7 @@ body {
 .pulledquote:before {
   width: 100%;
   content: "\201C";
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   font-size: 8em;
   position: relative;
   top: 0.48em;
@@ -301,7 +293,7 @@ body {
 }
 
 #article-images figcaption {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.2em;
