@@ -45,7 +45,7 @@ body {
 #article-cover .hero-photo {
   height: 100vh;
   overflow: hidden;
-  /* background: url(https://40.media.tumblr.com/0ffc52f37ac317fcd870e7a2c6b06fbf/tumblr_nbpb0sdTpR1rlusy7o1_1280.jpg) no-repeat center center fixed; */
+  /* background: url('./images/portfolio/trad/img\ \(1\).jpg') no-repeat center center fixed; */
   background-size: cover;
 }
 
