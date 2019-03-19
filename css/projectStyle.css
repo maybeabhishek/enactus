@@ -1,4 +1,13 @@
 /*PEN STYLES*/
+.projHead {
+  width: 330px;
+  margin-left: 10vw;
+  font-family: FontAwesome;
+  font-size: 30px;
+  -webkit-box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+}
+
 .blog-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,8 +17,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 6rem auto;
-  -webkit-box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.6%;
   background: #fff;
   line-height: 1.4;
